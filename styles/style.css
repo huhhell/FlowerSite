@@ -250,12 +250,39 @@
 
 .why-us__container {
   display: flex;
+  border: 1px solid #121212;
+  border-top: none;
 }
 .why-us__title {
-  flex: 0 0 50%;
+  flex: 1 1 50%;
+  border-right: 1px solid #121212;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+  padding: 80px 80px;
 }
 .why-us__advantages {
-  flex: 0 0 50%;
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+}
+.why-us__item {
+  flex: 1 1 25%;
+  padding: 80px;
+  border-bottom: 1px solid #121212;
+}
+.why-us__item-title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 120%;
+}
+.why-us__item-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.why-us__last-item {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=style.css.map */

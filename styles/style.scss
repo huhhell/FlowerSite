@@ -304,14 +304,40 @@
 .why-us {
   &__container {
     display: flex;
+    border: 1px solid #121212;
+    border-top: none;
   }
   &__title {
-    flex: 0 0 50%;
+    flex: 1 1 50%;
+    border-right: 1px solid #121212;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 120%;
+    padding: 80px 80px;
   }
   &__advantages {
-    flex: 0 0 50%;
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
   }
-  &__item {}
-  &__item-title {}
-  &__item-text {}
+
+  &__item {
+    flex: 1 1 25%;
+    padding: 80px;
+    border-bottom: 1px solid #121212;
+  }
+  &__item-title {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  &__item-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__last-item {
+      border-bottom: none;
+  }
 }
