@@ -51,6 +51,19 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1450px) {
+  .nav__left-side {
+    flex: none;
+    display: block;
+  }
+}
+.nav__left-side-icon {
+  display: block;
+  padding: 22px 19px;
+  width: 56px;
+  height: 56px;
+  border-right: 1px solid #121212;
+}
 .nav__shop {
   flex: 0 1 50%;
   padding: 32px 0;
@@ -76,6 +89,20 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1450px) {
+  .nav__right-side {
+    flex: none;
+    display: block;
+  }
+}
+.nav__right-side-icon {
+  flex: none;
+  display: block;
+  width: 56px;
+  height: 56px;
+  padding: 16px;
+  border-left: 1px solid #121212;
+}
 .nav__sign-in {
   flex: 0 1 50%;
   width: 100%;
@@ -99,6 +126,11 @@
 
 .main__row {
   display: flex;
+}
+@media (max-width: 1450px) {
+  .main__row {
+    display: block;
+  }
 }
 .main__about {
   flex: 0 0 50%;
@@ -153,12 +185,12 @@
   flex-wrap: wrap;
 }
 .main__show-text {
+  flex: 0 0 50%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  flex: 0 0 50%;
   border-right: 1px solid #121212;
   border-bottom: 1px solid #121212;
 }
@@ -179,12 +211,13 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 120%;
+  margin: 0 0 24px 0;
 }
 .main__show-text-button button img {
   padding: 0 4px;
+  overflow: hidden;
 }
 .main__show-image {
-  width: 100%;
   flex: 0 0 50%;
   border-right: 1px solid #121212;
   border-bottom: 1px solid #121212;
@@ -205,13 +238,23 @@
 .about__container {
   display: flex;
 }
+@media (max-width: 1450px) {
+  .about__container {
+    display: block;
+  }
+}
 .about__title {
   flex: 0 0 50%;
-  padding: 80px 0 0 80px;
+  padding: 80px 80px;
   font-size: 50px;
   font-weight: 600;
   line-height: 120%;
   border-right: 1px solid #121212;
+}
+@media (max-width: 1450px) {
+  .about__title {
+    border-bottom: 1px solid #121212;
+  }
 }
 .about__description {
   flex: 0 0 50%;
@@ -253,6 +296,11 @@
   border: 1px solid #121212;
   border-top: none;
 }
+@media (max-width: 1450px) {
+  .why-us__container {
+    display: block;
+  }
+}
 .why-us__title {
   flex: 1 1 50%;
   border-right: 1px solid #121212;
@@ -260,6 +308,11 @@
   font-weight: 600;
   line-height: 120%;
   padding: 80px 80px;
+}
+@media (max-width: 1450px) {
+  .why-us__title {
+    border-bottom: 1px solid #121212;
+  }
 }
 .why-us__advantages {
   flex: 1 1 50%;
@@ -290,6 +343,11 @@
   border: 1px solid #121212;
   border-top: none;
 }
+@media (max-width: 1450px) {
+  .contact__container {
+    flex-direction: column-reverse;
+  }
+}
 .contact__info {
   flex: 1 1 50%;
   border-right: 1px solid #121212;
@@ -299,6 +357,11 @@
 .contact__form {
   flex: 1 1 50%;
   padding: 80px 0 100px 80px;
+}
+@media (max-width: 1450px) {
+  .contact__form {
+    padding: 80px;
+  }
 }
 .contact__form-title {
   font-size: 50px;
@@ -400,8 +463,32 @@
 .contact__socials {
   flex: 0 1 50%;
 }
+@media (max-width: 1450px) {
+  .contact__socials {
+    border-bottom: 1px solid #121212;
+  }
+}
+@media (max-width: 1450px) {
+  .contact__socials-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px;
+  }
+}
 .contact__socials-img img {
   width: 100%;
+}
+@media (max-width: 1450px) {
+  .contact__socials-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
 }
 .contact__socials-list {
   display: flex;
@@ -412,6 +499,7 @@
   font-size: 38px;
   font-weight: 500;
   line-height: 120%;
+  text-align: center;
   border-right: 1px solid #121212;
 }
 .contact__socials-links {
@@ -435,12 +523,36 @@
   border: 1px solid #121212;
   border-top: none;
 }
+@media (max-width: 1450px) {
+  .service__subscriptions {
+    display: block;
+  }
+}
 .service__subscriptions-img {
   flex: 0 0 50%;
   border-right: 1px solid #121212;
 }
+@media (max-width: 1450px) {
+  .service__subscriptions-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 800px;
+  }
+}
 .service__subscriptions-img img {
   width: 100%;
+}
+@media (max-width: 1450px) {
+  .service__subscriptions-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+  }
 }
 .service__subscriptions-info {
   flex: 0 0 50%;
@@ -449,6 +561,11 @@
   align-items: center;
   justify-content: center;
   padding: 0 80px;
+}
+@media (max-width: 1450px) {
+  .service__subscriptions-info {
+    padding: 80px;
+  }
 }
 .service__subscriptions-info-tip {
   font-size: 14px;
@@ -492,6 +609,11 @@
   border: 1px solid #121212;
   border-top: none;
 }
+@media (max-width: 1450px) {
+  .service__wedding {
+    padding: 80px;
+  }
+}
 .service__wedding-tip {
   font-size: 14px;
   font-weight: 500;
@@ -511,6 +633,7 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 140%;
+  text-align: center;
   color: #ffffff;
   margin: 0 0 64px 0;
 }
@@ -589,16 +712,34 @@
   border: 1px solid #121212;
   border-top: none;
 }
+@media (max-width: 1450px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
 .footer__remind {
   flex: 0 0 25%;
   padding: 40px;
   border-right: 1px solid #121212;
+}
+@media (max-width: 1450px) {
+  .footer__remind {
+    flex: 0 0 50%;
+    border-bottom: 1px solid #121212;
+  }
 }
 .footer__remind-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
   margin-bottom: 24px;
+}
+.footer__remind-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__remind-input {
+  margin: 0 10px 0 0;
 }
 .footer__remind-input input {
   width: 280px;
@@ -624,6 +765,12 @@
   flex: 0 0 25%;
   border-right: 1px solid #121212;
   padding: 40px;
+}
+@media (max-width: 1450px) {
+  .footer__contact {
+    flex: 0 0 50%;
+    border-bottom: 1px solid #121212;
+  }
 }
 .footer__contact-title {
   font-size: 21px;
@@ -695,6 +842,11 @@
   border-right: 1px solid #121212;
   padding: 40px;
 }
+@media (max-width: 1450px) {
+  .footer__links {
+    flex: 0 0 50%;
+  }
+}
 .footer__links-shop-title {
   color: #808080;
   font-size: 21px;
@@ -731,6 +883,11 @@
 .footer__about {
   flex: 0 0 25%;
   padding: 40px;
+}
+@media (max-width: 1450px) {
+  .footer__about {
+    flex: 0 0 50%;
+  }
 }
 .footer__about-title {
   color: #808080;
