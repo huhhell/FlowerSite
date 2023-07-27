@@ -187,7 +187,7 @@
     }
   }
 
-  &__show  {
+  &__show {
     flex: 0 0 50%;
 
     &-blocks {
@@ -205,12 +205,13 @@
       border-right: 1px solid #121212;
       border-bottom: 1px solid #121212;
     }
-    
+
     &-text-title {
       font-size: 38px;
       font-weight: 500;
       line-height: 120%;
     }
+
     &-text-button {
       position: absolute;
       bottom: 0;
@@ -252,9 +253,11 @@
 .about {
   border: 1px solid #121212;
   border-top: none;
+
   &__container {
     display: flex;
   }
+
   &__title {
     flex: 0 0 50%;
     padding: 80px 0 0 80px;
@@ -275,19 +278,22 @@
       line-height: 120%;
       margin-bottom: 24px;
     }
+
     &-title {
       font-size: 38px;
       font-weight: 500;
       line-height: 120%;
       margin-bottom: 16px;
     }
+
     &-text {
       font-size: 16px;
       line-height: 140%;
       font-weight: 400;
       margin-bottom: 64px;
     }
-    &-button button{
+
+    &-button button {
       background-color: #fff;
       width: 175px;
       height: 56px;
@@ -307,6 +313,7 @@
     border: 1px solid #121212;
     border-top: none;
   }
+
   &__title {
     flex: 1 1 50%;
     border-right: 1px solid #121212;
@@ -315,6 +322,7 @@
     line-height: 120%;
     padding: 80px 80px;
   }
+
   &__advantages {
     flex: 1 1 50%;
     display: flex;
@@ -326,11 +334,13 @@
     padding: 80px;
     border-bottom: 1px solid #121212;
   }
+
   &__item-title {
     font-size: 38px;
     font-weight: 500;
     line-height: 120%;
   }
+
   &__item-text {
     font-size: 16px;
     font-weight: 400;
@@ -338,6 +348,168 @@
   }
 
   &__last-item {
-      border-bottom: none;
+    border-bottom: none;
   }
+}
+
+.contact {
+  &__container {
+    display: flex;
+    border: 1px solid #121212;
+    border-top: none;
+  }
+
+  &__info {
+    flex: 1 1 50%;
+    border-right: 1px solid #121212;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__form {
+    flex: 1 1 50%;
+    padding: 80px 0 100px 80px;
+  }
+
+  &__form-title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 24px;
+  }
+
+  &__form-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 16px;
+  }
+
+  &__form-phone {
+    display: inline-block;
+    margin: 0 16px 0 0;
+
+    input {
+      width: 250px;
+      height: 56px;
+      border: 1px solid #D2D2D7;
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+
+  &__form-button {
+    display: inline-block;
+
+    button {
+      width: 250px;
+      height: 56px;
+      background-color: #000;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+  }
+
+  &__address {
+    display: flex;
+    border-top: 1px solid #121212;
+  }
+  &__address-phone {
+    flex: 1 1 50%;
+  }
+  &__address-phone-title {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #121212;
+    border-right: 1px solid #121212;
+  }
+  &__address-phone-tels {
+    padding: 100px;
+    border-right: 1px solid #121212;
+  }
+
+  &__address-phone-tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+
+    img {
+      padding: 0 5px 0 0;
+    }
+  }
+
+  &__address-phone-tel:not(:last-child) {
+    margin: 0 0 24px 0;
+  }
+
+  &__address-address {
+    flex: 1 1 50%;
+  }
+  &__address-address-title {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #121212;
+
+  }
+
+  &__address-address-text {
+    margin: 100px 55px;
+  }
+
+  &__address-address-open {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 0 0 22px 0;
+    text-align: center;
+
+  }
+  &__address-address-street {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  &__socials {
+    flex: 0 1 50%;
+
+    &-img img {
+      width: 100%;
+    }
+    &-list {
+      display: flex;
+    }
+    &-title {
+      flex: 1 1 50%;
+      padding: 16px 100px;
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 120%;
+      border-right: 1px solid #121212;
+    }
+    &-links {
+      padding: 0 40px;
+      flex: 1 1 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &-link {
+
+    }
+  }
+
 }
