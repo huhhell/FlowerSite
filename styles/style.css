@@ -524,4 +524,64 @@
   background-color: transparent;
 }
 
+.reviews {
+  border: 1px solid #121212;
+  border-top: none;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reviews__tip-google {
+  margin: 0 0 8px 0;
+}
+.reviews__tip-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0 0 24px 0;
+}
+.reviews__title {
+  font-size: 50px;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+.reviews__review {
+  display: flex;
+}
+.reviews__review-quote {
+  padding: 0 24px;
+}
+.reviews__review-text {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 120%;
+  margin: 0 0 16px 0;
+}
+.reviews__review-name {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0 0 32px 0;
+}
+.reviews__dots {
+  margin: 0 0 64px 0;
+}
+.reviews__button button {
+  padding: 20px 24px;
+  border: 1px solid #121212;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=style.css.map */
