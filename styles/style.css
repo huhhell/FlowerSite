@@ -421,5 +421,63 @@
   align-items: center;
   justify-content: space-around;
 }
+.service__title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+  padding: 80px 0;
+  border: 1px solid #121212;
+  border-top: none;
+}
+.service__subscriptions {
+  display: flex;
+  border: 1px solid #121212;
+  border-top: none;
+}
+.service__subscriptions-img {
+  flex: 0 0 50%;
+  border-right: 1px solid #121212;
+}
+.service__subscriptions-img img {
+  width: 100%;
+}
+.service__subscriptions-info {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80px;
+}
+.service__subscriptions-info-tip {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+}
+.service__subscriptions-info-title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 0 0 16px 0;
+}
+.service__subscriptions-info-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  margin: 0 0 64px 0;
+  text-align: center;
+}
+.service__subscriptions-info-button button {
+  padding: 20px 24px;
+  border: 1px solid #121212;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  background-color: #fff;
+}
 
 /*# sourceMappingURL=style.css.map */
