@@ -89,9 +89,13 @@
     width: 56px;
     height: 56px;
     border-right: 1px solid #121212;
+
+    @media (max-width: 768px) {
+      width: 48px;
+      height: 48px;
+      padding: 18px 15px;
+    }
   }
-
-
 
   &__shop {
     flex: 0 1 50%;
@@ -133,6 +137,12 @@
     height: 56px;
     padding: 16px;
     border-left: 1px solid #121212;
+
+    @media (max-width: 768px) {
+      width: 48px;
+      height: 48px;
+      padding: 12px;
+    }
   }
 
   &__sign-in {
@@ -178,6 +188,10 @@
     border: 1px solid #121212;
     border-top: none;
 
+    @media (max-width: 768px) {
+      padding: 40px 16px;
+    }
+
     &-name {
       flex: 0 0 50%;
       border-bottom: 1px solid #121212;
@@ -188,6 +202,10 @@
       font-weight: 600;
       line-height: 120%;
       margin: 0 0 16px 0;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
     }
 
     &-description {
@@ -195,6 +213,10 @@
       line-height: 140%;
       font-weight: 300;
       padding: 0 0 54px 0;
+
+      @media (max-width: 768px) {
+        padding: 0 0 24px 0;
+      }
     }
 
     &-caption {
@@ -205,10 +227,14 @@
 
     &-img {
       flex: 0 0 50%;
-      width: 100%;
       padding-right: 24px;
       margin-top: 24px;
       border-right: 1px solid #121212;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
 
     &-text {
@@ -217,6 +243,11 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 120%;
+
+      @media (max-width: 768px) {
+        font-size: 11px;
+        margin-left: 16px;
+      }
     }
   }
 
@@ -226,6 +257,10 @@
     &-blocks {
       display: flex;
       flex-wrap: wrap;
+
+      @media (max-width: 768px) {
+        border-left: 1px solid #121212;
+      }
     }
 
     &-text {
@@ -237,12 +272,18 @@
       width: 100%;
       border-right: 1px solid #121212;
       border-bottom: 1px solid #121212;
+
+
     }
 
     &-text-title {
       font-size: 38px;
       font-weight: 500;
       line-height: 120%;
+
+      @media (max-width: 768px) {
+        font-size: 26px;
+      }
     }
 
     &-text-button {
@@ -259,9 +300,19 @@
         line-height: 120%;
         margin: 0 0 24px 0;
 
+        @media (max-width: 768px) {
+          font-size: 14px;
+          margin: 0 0 12px 0;
+        }
+
         img {
           padding: 0 4px;
           overflow: hidden;
+
+          @media (max-width: 768px) {
+            width: 24px;
+            height: auto;
+          }
         }
       }
     }
@@ -281,6 +332,10 @@
     flex: 0 1 50%;
     border: 1px solid #121212;
     border-top: none;
+
+    @media (max-width: 768px) {
+      border: none;
+    }
   }
 }
 
@@ -307,11 +362,21 @@
     @media (max-width: 1450px) {
       border-bottom: 1px solid #121212;
     }
+
+    @media (max-width: 768px) {
+      padding: 40px 16px;
+      font-size: 34px;
+      border-right: none;
+    }
   }
 
   &__description {
     flex: 0 0 50%;
     padding: 80px;
+    
+    @media (max-width: 768px) {
+      padding: 40px 16px;
+    }
 
     &-tip {
       text-transform: uppercase;
@@ -319,6 +384,10 @@
       font-weight: 500;
       line-height: 120%;
       margin-bottom: 24px;
+      
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
     }
 
     &-title {
@@ -326,6 +395,10 @@
       font-weight: 500;
       line-height: 120%;
       margin-bottom: 16px;
+
+      @media (max-width: 768px) {
+        font-size: 26px;
+      }
     }
 
     &-text {
@@ -345,6 +418,10 @@
       text-align: center;
       text-transform: uppercase;
       border: 1px solid #121212;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
   }
 }
