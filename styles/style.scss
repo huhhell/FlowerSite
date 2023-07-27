@@ -574,4 +574,49 @@
       background-color: #fff;
     }
   }
+  &__wedding {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    background: url(../img/service/bg.png) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding: 0 427px;
+    border: 1px solid #121212;
+    border-top: none;
+
+    &-tip {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 120%;
+      color: #ffffff;
+      margin: 0 0 24px 0;
+      text-transform: uppercase;
+    }
+    &-title {
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 120%;
+      color: #ffffff;
+      margin: 0 0 16px 0;
+    }
+    &-text {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 140%;
+      color: #ffffff;
+      margin: 0 0 64px 0;
+    }
+    &-button button{
+      padding: 20px 34px;
+      font-size: 16px;
+      text-transform: uppercase;
+      line-height: 120%;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      background-color: transparent;
+    }
+  }
 }
