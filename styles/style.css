@@ -138,6 +138,154 @@
   line-height: 120%;
 }
 
+.menu {
+  display: none;
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #121212;
+}
+@media (max-width: 768px) {
+  .menu {
+    width: 100%;
+  }
+}
+.menu__close {
+  border-bottom: 1px solid #121212;
+}
+.menu__close-button {
+  margin: 12px 16px;
+}
+@media (max-width: 768px) {
+  .menu__close-button {
+    margin: 8px 14px;
+  }
+}
+.menu__sign-in {
+  padding: 24px;
+  border-bottom: 1px solid #121212;
+}
+.menu__sign-in-button a {
+  color: #000000;
+  font-size: 21px;
+  line-height: 120%;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .menu__sign-in-button a {
+    font-size: 18px;
+  }
+}
+.menu__shop {
+  padding: 24px;
+  border-bottom: 1px solid #121212;
+}
+.menu__shop-button a {
+  color: #000000;
+  font-size: 21px;
+  line-height: 120%;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .menu__shop-button a {
+    font-size: 18px;
+  }
+}
+.menu__service {
+  padding: 24px;
+  border-bottom: 1px solid #121212;
+}
+.menu__service-button a {
+  color: #000000;
+  font-size: 21px;
+  line-height: 120%;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .menu__service-button a {
+    font-size: 18px;
+  }
+}
+.menu__contact {
+  padding: 24px;
+  border-bottom: 1px solid #121212;
+}
+.menu__contact-button a {
+  color: #000000;
+  font-size: 21px;
+  line-height: 120%;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .menu__contact-button a {
+    font-size: 18px;
+  }
+}
+.menu__about {
+  padding: 24px;
+  border-bottom: 1px solid #121212;
+}
+.menu__about-button a {
+  color: #000000;
+  font-size: 21px;
+  line-height: 120%;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .menu__about-button a {
+    font-size: 18px;
+  }
+}
+.menu__other {
+  padding: 24px;
+  border-bottom: 1px solid #121212;
+}
+.menu__other-shipping a {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 120%;
+}
+@media (max-width: 768px) {
+  .menu__other-shipping a {
+    font-size: 14px;
+  }
+}
+.menu__other-terms a {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 120%;
+}
+@media (max-width: 768px) {
+  .menu__other-terms a {
+    font-size: 14px;
+  }
+}
+.menu__other-privacy a {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 120%;
+}
+@media (max-width: 768px) {
+  .menu__other-privacy a {
+    font-size: 14px;
+  }
+}
+.menu__other > :not(:last-child) {
+  padding-bottom: 16px;
+}
+.menu__socials {
+  padding: 24px;
+}
+.menu__socials-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .main__row {
   display: flex;
 }
