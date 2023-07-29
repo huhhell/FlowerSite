@@ -302,11 +302,16 @@
   }
 }
 .cart__top {
-  padding: 15.5px 40px;
+  padding: 30px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #121212;
+}
+@media (max-width: 1450px) {
+  .cart__top {
+    padding: 15.5px 40px;
+  }
 }
 @media (max-width: 768px) {
   .cart__top {
