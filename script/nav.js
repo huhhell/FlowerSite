@@ -1,6 +1,7 @@
 let isOpen = {
     menu: false,
     cart: false,
+    signIn: false,
 }
 
 let clientWidth = document.documentElement.clientWidth;
